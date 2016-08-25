@@ -21,6 +21,7 @@
 		CC8393C61D6BE4940093924C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC8393C51D6BE4940093924C /* Assets.xcassets */; };
 		CC8393C91D6BE4940093924C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8393C71D6BE4940093924C /* LaunchScreen.storyboard */; };
 		CCB5E4301D6E86D2006FD577 /* UploadInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB5E42F1D6E86D2006FD577 /* UploadInfoVC.m */; };
+		CCB5E4321D6E95D9006FD577 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB5E4311D6E95D9006FD577 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		CC8393CA1D6BE4940093924C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCB5E42E1D6E86D2006FD577 /* UploadInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadInfoVC.h; sourceTree = "<group>"; };
 		CCB5E42F1D6E86D2006FD577 /* UploadInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadInfoVC.m; sourceTree = "<group>"; };
+		CCB5E4311D6E95D9006FD577 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		CC82DDE61D6BEB1C00EBD781 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CCB5E4311D6E95D9006FD577 /* Home.storyboard */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				CC8393C91D6BE4940093924C /* LaunchScreen.storyboard in Resources */,
 				CC8393C61D6BE4940093924C /* Assets.xcassets in Resources */,
 				CC8393C41D6BE4940093924C /* Login.storyboard in Resources */,
+				CCB5E4321D6E95D9006FD577 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

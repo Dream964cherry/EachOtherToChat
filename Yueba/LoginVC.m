@@ -9,6 +9,7 @@
 #import "LoginVC.h"
 #import "QYHTTPManager.h"
 #import "QYAccount.h"
+#import "AppDelegate.h"
 
 @interface LoginVC ()
 @property (weak, nonatomic) IBOutlet UITextField *phoneFild;
@@ -59,6 +60,8 @@
             
             if (responseObject[@"data"][@"name"]) {
                 //跳转到首页
+                AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+                [delegate changeToHome];
             }else{
 //                跳转到更新用户信息页面
                 //切换到提交用户信息界面

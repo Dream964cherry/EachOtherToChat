@@ -9,6 +9,7 @@
 #import "UploadInfoVC.h"
 #import "QYAccount.h"
 #import "QYHTTPManager.h"
+#import "AppDelegate.h"
 
 @interface UploadInfoVC ()
 @property (weak, nonatomic) IBOutlet UITextField *nameFild;
@@ -55,7 +56,7 @@
                              @"name":_nameFild.text ,
                              @"gender" :[@[@"F", @"M"] objectAtIndex:_genderFild.selectedSegmentIndex]};
     
-    [[QYHTTPManager manager] uploadInfo:parmas Completion:^(NSURLSessionTask *task, id responseObject, NSError *error) {
+    [[QYHTTPManager httpManager] uploadInfo:parmas Completion:^(NSURLSessionTask *task, id responseObject, NSError *error) {
         if (error) {
             NSLog(@"%@", error);
             return;
@@ -64,6 +65,8 @@
         //判断上传是否成功
         
         //切换到首页
+        AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        [delegate changeToHome];
     }];
 }
 @end

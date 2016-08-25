@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+//登陆后切换到首页
+-(void)changeToHome;
 
 @end
 
