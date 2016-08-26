@@ -52,7 +52,7 @@
     //上传用户信息
     
     //构造参数字典
-    NSDictionary *parmas = @{@"userId":[QYAccount shareAccount].userId,
+    NSDictionary *parmas = @{@"userId":[QYAccount shareAccount].user,
                              @"name":_nameFild.text ,
                              @"gender" :[@[@"F", @"M"] objectAtIndex:_genderFild.selectedSegmentIndex]};
     

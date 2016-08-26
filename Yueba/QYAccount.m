@@ -37,7 +37,7 @@
 
 -(void)saveLogin:(NSDictionary *)info{
     self.telephone = info[@"telephone"] ;
-    self.userId = [info[@"userId"] stringValue];
+    self.user = info[@"userId"];
     self.name = info[@"name"];
     self.gender = info[@"gender"];
     
@@ -48,7 +48,7 @@
 }
 
 -(BOOL)isLogin{
-    if (self.userId) {
+    if (self.user) {
         return YES;
     }else{
         return NO;
@@ -59,7 +59,7 @@
 -(instancetype)initWithCoder:(NSCoder *)aDecoder{
     if (self = [super init]) {
         self.telephone = [aDecoder decodeObjectForKey:@"telephone"];
-        self.userId = [aDecoder decodeObjectForKey:@"userId"];
+        self.user = [aDecoder decodeObjectForKey:@"uid"];
         self.name =[aDecoder decodeObjectForKey:@"name"];
         self.gender = [aDecoder decodeObjectForKey:@"gender"];
     }
@@ -72,7 +72,7 @@
 //归档的方法
 -(void)encodeWithCoder:(NSCoder *)aCoder{
     [aCoder encodeObject:self.telephone forKey:@"telephone"];
-    [aCoder encodeObject:self.userId forKey:@"userId"];
+    [aCoder encodeObject:self.user forKey:@"uid"];
     [aCoder encodeObject:self.name forKey:@"name"];
     [aCoder encodeObject:self.gender forKey:@"gender"];
 }

@@ -10,7 +10,7 @@
 
 @interface QYAccount : NSObject
 
-@property (nonatomic, strong)NSString *userId;//用户id
+@property (nonatomic, strong)NSString *user;//用户id
 @property (nonatomic, strong)NSString *telephone;//用户电话
 @property (nonatomic, strong)NSString *name;//用户名字
 @property (nonatomic, strong)NSString *gender;//用户性别
